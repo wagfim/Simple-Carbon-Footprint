@@ -7,20 +7,23 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        Bicycle bike = new Bicycle();
-        Building predio = new Building();
-        //Car carro = new Car();
-        Car carro2 = new Car("alcool", 22.2, 1080, "aço", "agressivo");
-        
         ArrayList<Coisa> coisas = new ArrayList<>();
-        /*
-        coisas.add(bike);
-        coisas.add(predio);
-        coisas.add(carro);
-        */
+        Car carroGasolina = new Car("gasolina", 22.2, 1080, "aço", "normal");
+        Car carroAlcool = new Car("alcool", 22.2, 1080, "aço", "normal");
+        Car carroDiesel = new Car("diesel", 22.2, 1080, "aço", "normal");
+        
+        //Bicycle bike = new Bicycle();
+        //Building predio = new Building();
         
         
-        coisas.add(carro2);
+        carroGasolina.andar(11500);
+        carroAlcool.andar(11500);
+        carroDiesel.andar(11500);
+
+        coisas.add(carroGasolina);
+        coisas.add(carroAlcool);
+        coisas.add(carroDiesel);
+        
         for (int i = 0; i < coisas.size(); i++) {
             coisas.get(i).getCarbonFootprint();
         }
