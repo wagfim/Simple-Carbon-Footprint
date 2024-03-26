@@ -1,9 +1,7 @@
-
 import java.util.ArrayList;
-
 /**
  *
- * @author aluno
+ * @author wagfim@github
  */
 public class Main {
     public static void main(String[] args) {
