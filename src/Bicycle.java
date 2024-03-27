@@ -7,6 +7,6 @@ public class Bicycle extends Coisa implements CarbonFootprint{
 
     @Override
     public void getCarbonFootprint() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("Pegada de carbono da bicicleta: XX" + " por ano");
     }
 }
