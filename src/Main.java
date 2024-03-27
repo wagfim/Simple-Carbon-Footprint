@@ -6,11 +6,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Coisa> coisas = new ArrayList<>();
-        Car carroGasolina = new Car("gasolina", 22.2, 1080, "aço", "normal");
+        Car carroGasolina = new Car("gasolina", 22.2, 1080, "aço", "economico");
         Car carroAlcool = new Car("alcool", 22.2, 1080, "aço", "normal");
-        Car carroDiesel = new Car("diesel", 22.2, 1080, "aço", "normal");
+        Car carroDiesel = new Car("diesel", 22.2, 1080, "aço", "agressivo");
         
-        //Bicycle bike = new Bicycle();
+        Bicycle bike = new Bicycle();
         //Building predio = new Building();
         
         
@@ -21,6 +21,7 @@ public class Main {
         coisas.add(carroGasolina);
         coisas.add(carroAlcool);
         coisas.add(carroDiesel);
+        coisas.add(bike);
         
         for (int i = 0; i < coisas.size(); i++) {
             coisas.get(i).getCarbonFootprint();
