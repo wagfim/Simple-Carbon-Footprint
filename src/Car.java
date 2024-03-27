@@ -19,9 +19,9 @@ public class Car extends Coisa implements CarbonFootprint {
         this.combustivel = combustivel;
         this.consumoMedio = consumoMedio;
         switch(modoConducao) {
-            case "eficiente" -> this.consumoMedio *= 0.8;
+            case "economico" -> this.consumoMedio *= 1.1;
             case "normal" -> this.consumoMedio *= 1;
-            case "agressivo" -> this.consumoMedio *= 1.5;
+            case "agressivo" -> this.consumoMedio *= 0.9;
         }
         this.peso = peso;
         this.materialConstrucao = materialConstrucao;
