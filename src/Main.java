@@ -6,11 +6,11 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         ArrayList<Coisa> coisas = new ArrayList<>();
-        Car carroGasolina = new Car("gasolina", 22.2, 1080, "aço", "economico");
+        Car carroGasolina = new Car("gasolina", 22.2, 1080, "aço", "normal");
         Car carroAlcool = new Car("alcool", 22.2, 1080, "aço", "normal");
         Car carroDiesel = new Car("diesel", 22.2, 1080, "aço", "agressivo");
         
-        Bicycle bike = new Bicycle();
+        Bicycle bike = new Bicycle(50);
         //Building predio = new Building();
         
         
